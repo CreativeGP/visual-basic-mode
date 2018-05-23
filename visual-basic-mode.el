@@ -368,7 +368,7 @@ Note: shall not contain any \\( \\) (use \\(?: if need be)."
     (defconst visual-basic-defun-start-regexp-formatter
       "^[ \t]*\\([Pp]ublic \\|[Pp]rivate \\|[Ss]tatic\\|[Ff]riend \\)?\\(%s\\)[ \t]+\\(\\w+\\)[ \t]*(?")
     (defconst visual-basic-defun-start-regexp
-      (format visual-basic-defun-start-regexp-formatter "[Ss]ub\\|[Ff]unction\\|[Pp]roperty +[GgSsLl]et\\|[Tt]ype\\|[Ee]num\\|[Cc]lass"))))
+      (format visual-basic-defun-start-regexp-formatter "[Ss]ub\\|[Ff]unction\\|[Pp]roperty +[GgSsLl]et\\|[Tt]ype\\|[Ee]num\\|[Cc]lass\\|[Mm]odule"))))
 
 
 (defconst visual-basic-defun-end-regexp-formatter
@@ -376,7 +376,7 @@ Note: shall not contain any \\( \\) (use \\(?: if need be)."
 
 (defconst visual-basic-defun-end-regexp
   (format visual-basic-defun-end-regexp-formatter
-	  "[Ss]ub\\|[Ff]unction\\|[Pp]roperty\\|[Tt]ype\\|[Ee]num\\|[Cc]lass"))
+	  "[Ss]ub\\|[Ff]unction\\|[Pp]roperty\\|[Tt]ype\\|[Ee]num\\|[Cc]lass\\|[Mm]odule"))
 
 (defconst visual-basic-dim-regexp
   "^[ \t]*\\([Cc]onst\\|[Dd]im\\|[Pp]rivate\\|[Pp]ublic\\)\\_>"  )
@@ -471,7 +471,7 @@ Note: shall not contain any \\( \\) (use \\(?: if need be)."
       "LBound" "LCase" "LOF" "LSet" "LTrim" "Left" "Len" "Let" "Like" "Line"
       "Load" "LoadPicture" "LoadResData" "LoadResPicture" "LoadResString" "Loc"
       "Lock" "Log" "Long" "Loop" "MDIForm" "MIRR" "Me" "MenuItems"
-      "MenuLine" "Mid" "Minute" "MkDir" "Month" "MsgBox" "NPV" "NPer" "Name"
+      "MenuLine" "Mid" "Minute" "MkDir" "Module" "Month" "MsgBox" "NPV" "NPer" "Name"
       "New" "Next" "Not" "Now" "Nothing" "Null" "Object" "Oct" "On" "Open"
       "OpenDatabase"
       "Operator" "Option" "Optional"
